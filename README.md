@@ -41,7 +41,7 @@ https://github.com/GitTools/actions/blob/main/docs/examples/github/gitversion/ex
 
    If you want a simpler approach, there is a specific github action for this: https://github.com/marketplace/actions/jetbrains-resharper-inspect-code
 
-4. Static code analysis
+3. Static code analysis
 
    Log into 1password. Find the SonarQube item. Click on website url and login with the 1password credentials.
    Create a new project.
@@ -56,14 +56,11 @@ https://github.com/GitTools/actions/blob/main/docs/examples/github/gitversion/ex
    Create the sbomfile:
    https://github.com/CycloneDX/gh-dotnet-generate-sbom
    
-   We need a server to push our sbom file to. <br><br>
-   Download the latest docker-compose file for the server:
+   Log into 1password and find the dependencytrack server
+
+   In there, create a new project, which you can push the sbom file to.
    
-   ```curl -LO https://dependencytrack.org/docker-compose.yml```
-
-   Once you have spun up this server locally, push your sbom file to your server in your pipeline: <br><br>
-   https://github.com/DependencyTrack/gh-upload-sbom 
-
+   Once you have that set up, you can use this action to push it:  https://github.com/DependencyTrack/gh-upload-sbom 
 
 2. Implement Dependabot
 
