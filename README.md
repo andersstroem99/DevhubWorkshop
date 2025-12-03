@@ -19,7 +19,7 @@ GitVersion automatically generates consistent semantic version numbers from your
  
 There is 2 steps <br><br>
 First you need to set it up: <br><br>
-[https://gitversion.net/docs/](https://github.com/GitTools/actions/blob/main/docs/examples/github/gitversion/setup.md).
+https://gitversion.net/docs/.
 
 Then you need to execute: <br><br>
 https://github.com/GitTools/actions/blob/main/docs/examples/github/gitversion/execute.md   
